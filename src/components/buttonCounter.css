@@ -39,6 +39,11 @@
   transform: translateY(-2px);
 }
 
+.counter-button2:active {
+  box-shadow: none;
+  transform: translateY(2px);
+}
+
 .counter-button3 {
   border-radius: 8px;
   border-style: none;

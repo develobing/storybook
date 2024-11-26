@@ -27,12 +27,15 @@ export default {
       },
     },
     size: {
-      control: 'text',
+      control: 'select',
       description:
         'You can only type in either "small" or "large" for changing size',
       table: {
         defaultValue: { summary: 'large' },
       },
+    },
+    onClick: {
+      action: 'clicked',
     },
   },
 };
@@ -42,6 +45,16 @@ export const Large = {
     size: 'large',
     label: 'Click me',
     backgroundColor: '#c4fff3',
+  },
+  argTypes: {
+    buttonStyleVersion: {
+      control: {
+        control: 'select',
+        options: ['counter-button1', 'counter-button2', 'counter-button3'],
+        description:
+          'Choose any of the three options of different styled buttons',
+      },
+    },
   },
   parameters: {
     docs: {
@@ -57,6 +70,16 @@ export const Small = {
     size: 'small',
     label: 'Enter',
     backgroundColor: '#c4fff3',
+  },
+  argTypes: {
+    buttonStyleVersion: {
+      control: {
+        control: 'select',
+        options: ['counter-button1', 'counter-button2', 'counter-button3'],
+        description:
+          'Choose any of the three options of different styled buttons',
+      },
+    },
   },
   parameters: {
     docs: {

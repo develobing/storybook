@@ -12,8 +12,8 @@ export const ButtonCounter = ({
     <div>
       <button
         className={[buttonStyleVersion, `counter-button--${size}`].join(' ')}
-        onClick={onClick}
         style={{ backgroundColor }}
+        onClick={onClick}
       >
         {label}
       </button>
